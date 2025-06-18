@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>らーめん極味 - Ramen Gokumi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1 class="hero-title">らーめん極味</h1>
+      <p class="hero-subtitle">職人のこだわり、極上の一杯を。</p>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="#about">私たちについて</a></li>
+      <li><a href="#menu">メニュー</a></li>
+      <li><a href="#access">アクセス</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>私たちについて</h2>
+    <p>
+      らーめん極味は、厳選した素材と丹精込めた自家製スープで、毎日丁寧に一杯ずつ提供しています。<br>
+      味噌、醤油、塩、どれもが唯一無二の味わいです。
+    </p>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>メニュー</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/miso.jpg" alt="味噌ラーメン" />
+          <h3>味噌ラーメン</h3>
+          <p>濃厚味噌と香味野菜の絶妙なハーモニー。</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/syoyu.jpg" alt="醤油ラーメン" />
+          <h3>醤油ラーメン</h3>
+          <p>あっさりながらも深みのあるスープが自慢。</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/shio.jpg" alt="塩ラーメン" />
+          <h3>塩ラーメン</h3>
+          <p>クリアで繊細な味、素材の旨みを引き立てます。</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <section id="access" class="section">
+    <h2>アクセス</h2>
+    <p>〒100-0001 東京都千代田区神田1-2-3</p>
+    <p>営業時間：11:00〜22:00（火曜定休）</p>
+    <iframe
+      src="https://maps.google.com/maps?q=tokyo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      width="100%"
+      height="300"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Ramen Gokumi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
