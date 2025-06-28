@@ -1,81 +1,173 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>らーめん極味 - Ramen Gokumi</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Xiu Yuan serves authentic Taiwanese dishes in Taipei. Discover weekly specials and enjoy a taste of home.">
+    <title>Xiu Yuan - Taste of Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/hamburger-menu.js"></script>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-overlay">
-      <h1 class="hero-title">らーめん極味</h1>
-      <p class="hero-subtitle">職人のこだわり、極上の一杯を。</p>
-    </div>
-  </header>
-
-  <nav class="nav">
-    <ul>
-      <li><a href="#about">私たちについて</a></li>
-      <li><a href="#menu">メニュー</a></li>
-      <li><a href="#access">アクセス</a></li>
-    </ul>
-  </nav>
-
-  <section id="about" class="section">
-    <h2>私たちについて</h2>
-    <p>
-      らーめん極味は、厳選した素材と丹精込めた自家製スープで、毎日丁寧に一杯ずつ提供しています。<br>
-      味噌、醤油、塩、どれもが唯一無二の味わいです。
-    </p>
-  </section>
-
-  <section id="menu" class="section">
-    <h2>メニュー</h2>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/miso.jpg" alt="味噌ラーメン" />
-          <h3>味噌ラーメン</h3>
-          <p>濃厚味噌と香味野菜の絶妙なハーモニー。</p>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-logo">
+            <a href="index.html">
+                <img src="images/image8.png" alt="Xiu Yuan restaurant logo">
+            </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-overlay" id="menuOverlay">
+                <div class="menu-panel" id="menuPanel">
+                    <nav class="main-nav">
+                        <ul>
+                            <li>
+                                <a href="menu.html">Menu</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="about.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="lang-switch">
+                        <a href="#">
+                            <img src="images/image1.png" alt="English">
+                            <span>EN</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/image15.png" alt="Traditional Chinese">
+                            <span>TW</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/image14.png" alt="Japanese">
+                            <span>JP</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="swiper-slide">
-          <img src="images/syoyu.jpg" alt="醤油ラーメン" />
-          <h3>醤油ラーメン</h3>
-          <p>あっさりながらも深みのあるスープが自慢。</p>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/image6.jpg" alt="Interior view of Xiu Yuan restaurant">
+            <div class="hero-text">
+                <h2>Your next meal isn't just food—it's a taste of home.</h2>
+                <h1>Xiu Yuan</h1>
+            </div>
+        </section>
+        <section class="special">
+            <div>
+                <h2>Week’s Special</h2>
+                <div class="special-description">
+                    <p>
+                        Tender poached chicken served with fragrant rice cooked in chicken fat,
+                        accompanied by chili sauce and cucumber slices. A comforting taste of home in every bite.
+                    </p>
+                </div>
+            </div>
+            <div class="special-card">
+                <div class="special-card-info">
+                    <img src="images/image9.png" alt="Hainanese Chicken Rice">
+                    <p class="price">$150</p>
+                </div>
+                <h3>Hainan Chicken Rice</h3>
+            </div>
+        </section>
+        <section class="menu">
+            <h2>Menu</h2>
+            <!-- スライダー本体 -->
+            <div class="swiper-container">
+                <!-- ナビゲーション（矢印） -->
+                <div class="swiper-button-prev">
+                    <img src="images/slider-arrow.png" alt="前へ">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="images/slider-arrow.png" alt="次へ">
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/image18.jpeg" alt="A dish1 from our menu">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/image19.jpeg" alt="A dish2 from our menu">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/image20.jpeg" alt="A dish3 from our menu">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/image21.png" alt="A dish4 from our menu">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/image22.png" alt="A dish5 from our menu">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/image31.png" alt="A dish6 from our menu">
+                        </div>
+                    </div>
+                    <!-- ページネーション（ドット） -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="access-info">
+            <div>
+                <p>11：00～14：00, 17：00～20：00 (Mon.~Sat.)</p>
+                <p>No. 122號, Section 2, Zhicheng Rd, Shilin District, Taipei City, 台湾 111</p>
+            </div>
+            <div class="icons">
+                <a href="#">
+                    <img src="images/image11.png" alt="Facebook icon">
+                </a>
+                <a href="#">
+                    <img src="images/image12.png" alt="Instagram icon">
+                </a>
+                <a href="#">
+                    <img src="images/image13.png" alt="Line icon">
+                </a>
+            </div>
         </div>
-        <div class="swiper-slide">
-          <img src="images/shio.jpg" alt="塩ラーメン" />
-          <h3>塩ラーメン</h3>
-          <p>クリアで繊細な味、素材の旨みを引き立てます。</p>
+        <div class="copy-right">
+            <p>&copy; Xiu Yuan All Rights Reserved.</p>
         </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </section>
-
-  <section id="access" class="section">
-    <h2>アクセス</h2>
-    <p>〒100-0001 東京都千代田区神田1-2-3</p>
-    <p>営業時間：11:00〜22:00（火曜定休）</p>
-    <iframe
-      src="https://maps.google.com/maps?q=tokyo&t=&z=13&ie=UTF8&iwloc=&output=embed"
-      width="100%"
-      height="300"
-      frameborder="0"
-      style="border:0"
-      allowfullscreen=""
-      loading="lazy"
-    ></iframe>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2025 Ramen Gokumi. All rights reserved.</p>
-  </footer>
+    </footer>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true, // スライドをループさせる
+            autoplay: {
+                delay: 3000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // ドットをクリックで移動できる
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3, // 768px以上では3つ表示
+                    spaceBetween: 10
+                }
+            }
+        });
+    </script>
 </body>
 </html>

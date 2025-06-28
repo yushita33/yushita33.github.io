@@ -1,0 +1,45 @@
+.access-info {
+    background-color: #940000;
+    color: white;
+    font-size: 1em;
+    padding: 1em 0;
+    padding-left: 100px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.access-info p:first-child {
+    margin-bottom: 1.5em;
+}
+.access-info .icons {
+    margin-left: auto;
+	min-width: 8em;
+}
+.access-info .icons a {
+    text-decoration: none;
+}
+.access-info .icons img {
+    width: 30px;
+    margin: 0 5px;
+}
+.access-info p,
+.copy-right p {
+    margin: 0;
+}
+.copy-right {
+    background-color: #f5f0e1;
+    text-align: center;
+    padding: 0.7em;
+    font-size: 0.9em
+}
+
+@media (max-width: 768px) {
+    .access-info {
+        padding-left: 10px;
+        font-size: 0.8em;
+    }
+    .access-info .icons img {
+        width: 24px;
+        margin: 0 2px;
+    }
+}

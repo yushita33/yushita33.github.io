@@ -1,0 +1,169 @@
+main {
+    padding: 0 100px;
+    background-color: #f5f0e1;
+}
+/* hero */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 3em 0;
+}
+.hero > img {
+    width: 100%;;
+}
+.hero-text > h1 {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.hero-text > h2 {
+    font-size: 1.3em;
+    color: white;
+    font-weight: 400;
+    padding: 5px;
+    background-color: rgba(255, 153, 102, 0.4);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    white-space: nowrap;
+}
+/* special */
+.special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 0px 10em;
+    background-color: white;
+    margin-left: -100px;
+    margin-right: -100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.special > div:first-child {
+    flex: 1;
+    padding-right: 2em;
+}
+.special-card {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+.special-card-info {
+    display: flex;
+    align-items: flex-end;
+}
+.special-card img {
+    transform: rotate(-8deg);
+    width: 20em;
+    max-width: 100%;
+}
+.special-card h3 {
+    text-align: center;
+    color: #d6ac80;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+.special-card .price {
+    color: #c85a19;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.special-description p {
+    color: #d6ac80;
+    line-height: 1.6;
+}
+/* menu */
+.menu {
+    text-align: center;
+    padding: 1em 0;
+}
+.menu .swiper-slide img {
+    width: 20vw;
+    object-fit: cover;
+}
+.swiper-container {
+    border: 5px solid #d6ac80;
+    background-color: white;
+    padding: 1em;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+/* スライド間の調整（必要に応じて） */
+.swiper-slide {
+    width: auto;
+    height: auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none; /* デフォルト矢印を消す */
+}
+/* ナビゲーションの外出し */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.swiper-button-prev {
+    left: -40px;
+}
+
+.swiper-button-next {
+    right: -40px;
+}
+
+.swiper-button-prev img,
+.swiper-button-next img {
+    width: 5em;
+}
+
+.swiper-button-prev img {
+    transform: scaleX(-1);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #940000;
+}
+
+/** 共通 */
+.special h2,
+.menu h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #940000;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 10px;
+    }
+    .hero-text > h2 {
+        top: 20%;
+        white-space: normal;
+    }
+    .special {
+        flex-direction: column;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .swiper-container {
+        width: 60vw;
+    }
+    .menu .swiper-slide img {
+        width: 50vw;
+    }
+}

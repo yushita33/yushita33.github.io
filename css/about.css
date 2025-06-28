@@ -1,0 +1,140 @@
+/* common */
+main {
+    padding: 0 100px;
+    background-color: #f5f0e1;
+}
+.about > h2,
+.contact > h2 {
+    margin-top: 0;
+    padding-top: 1.5em;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #940000;
+    text-decoration: underline;
+}
+/* about */
+.about > h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+.about-detail {
+    display: flex;
+    background-color: #d6ac80;
+    padding-left: 100px;
+    margin-left: -100px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.about-detail > div {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24em;
+    height: 15em;
+    border-radius: 50%;
+    margin-right: 2em;
+}
+.about-detail > div > img {
+    width: 15em;
+}
+.about-detail > p {
+    flex: 1;
+    color: #f5f0d1;
+    font-size: 1.3em;
+    font-weight: 500;
+    max-width: 23em;
+    text-align: center;
+    padding-right: 2em;
+    margin-left: auto;
+}
+.about > h3 {
+    background-color: #f8a300;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding: 1em 2em;
+    padding-right: 100px;
+    margin-right: -100px;
+}
+/* contact */
+.contact {
+    background-color: white;
+    padding-left: 100px;
+    margin-left: -100px;
+    padding-right: 100px;
+    margin-right: -100px;
+}
+.contact .map {
+    text-align: center;
+}
+.contact .map > iframe {
+    border: none;
+    width: 70%;
+    max-width: 1200px;
+    height: 28em;
+}
+.contact dl {
+    display: grid;
+    grid-template-columns: 6.5em 1fr;
+    column-gap: 0.5em;
+    color: #d6ac80;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.contact dt {
+    position: relative;
+}
+.contact dt::after {
+    content: ":";
+    position: absolute;
+    right: 0;
+}
+.contact dd {
+    margin-bottom: 1.2em;
+}
+
+@media (max-width: 1030px) {
+    .about-detail {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 10px;
+    }
+    .about-detail {
+        align-items: center;
+        padding-left: 10px;
+        margin-left: -10px;
+        padding-right: 10px;
+        margin-right: -10px;
+    }
+    .about > h3 {
+        padding-left: 1em;
+        padding-right: 10px;
+        margin-right: -10px;
+    }
+    .about-detail > div {
+        margin-right: 0;
+    }
+    .about-detail > p {
+        padding-right: 0;
+        margin-left: 0;
+    }
+    .contact .map > iframe {
+        width: 100%;
+        height: 16em;
+    }
+    .contact dl {
+        grid-template-columns: 1fr;
+    }
+    .contact dt::after {
+        content: "";
+    }
+}
+
+
