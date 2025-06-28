@@ -164,8 +164,12 @@ main {
     .special-card-info {
         flex-direction: column;
     }
+    .special-card img {
+        width: 80%;
+    }
     .special-card .price {
         margin: 0;
+        margin-left: auto;
     }
     .swiper-container {
         width: 60vw;
