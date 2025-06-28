@@ -120,10 +120,18 @@ main {
     }
     .about-detail > div {
         margin-right: 0;
+        width: 100%;
+    }
+    .about-detail > div > img {
+        width: 13em;
     }
     .about-detail > p {
         padding-right: 0;
         margin-left: 0;
+    }
+    .contact {
+        padding-right: 10px;
+        margin-right: -10px;
     }
     .contact .map > iframe {
         width: 100%;

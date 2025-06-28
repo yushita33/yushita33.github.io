@@ -150,7 +150,8 @@ main {
         padding: 0 10px;
     }
     .hero-text > h2 {
-        top: 20%;
+        font-size: 1em;
+        top: 15%;
         white-space: normal;
     }
     .special {
@@ -159,6 +160,12 @@ main {
         margin-right: -10px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .special-card-info {
+        flex-direction: column;
+    }
+    .special-card .price {
+        margin: 0;
     }
     .swiper-container {
         width: 60vw;

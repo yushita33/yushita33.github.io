@@ -74,4 +74,10 @@ main {
     .menu-item.vegetable-delights {
         flex-direction: column-reverse;
     }
+    .menu-image {
+        width: 100vw;
+    }
+    .menu-image > img {
+        min-width: auto;
+    }
 }
