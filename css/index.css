@@ -163,6 +163,7 @@ main {
     }
     .special-card-info {
         flex-direction: column;
+        align-items: center;
     }
     .special-card img {
         width: 80%;
