@@ -1,5 +1,4 @@
 main {
-    padding: 0 100px;
     background-color: #f5f0e1;
 }
 /* hero */
@@ -95,13 +94,11 @@ main {
     margin: auto;
     position: relative;
 }
-
 /* スライド間の調整（必要に応じて） */
 .swiper-slide {
     width: auto;
     height: auto;
 }
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
     display: none; /* デフォルト矢印を消す */
@@ -117,24 +114,19 @@ main {
 .swiper-button-prev {
     left: -40px;
 }
-
 .swiper-button-next {
     right: -40px;
 }
-
 .swiper-button-prev img,
 .swiper-button-next img {
     width: 5em;
 }
-
 .swiper-button-prev img {
     transform: scaleX(-1);
 }
-
 .swiper-pagination-bullet-active {
     background-color: #940000;
 }
-
 /** 共通 */
 .special h2,
 .menu h2 {
@@ -146,9 +138,6 @@ main {
 }
 
 @media (max-width: 768px) {
-    main {
-        padding: 0 10px;
-    }
     .hero-text > h2 {
         font-size: 1em;
         top: 15%;

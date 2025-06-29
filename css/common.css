@@ -1,0 +1,15 @@
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+main {
+    padding: 0 100px;
+    padding-top: 70px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -1,6 +1,5 @@
 /* common */
 main {
-    padding: 0 100px;
     background-color: #f5f0e1;
 }
 .about > h2,
@@ -103,9 +102,6 @@ main {
 }
 
 @media (max-width: 768px) {
-    main {
-        padding: 0 10px;
-    }
     .about-detail {
         align-items: center;
         padding-left: 10px;
