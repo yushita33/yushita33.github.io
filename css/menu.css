@@ -127,3 +127,40 @@ body {
     position: absolute;
     bottom: 125px;
 }
+
+@media screen and (max-width: 1200px) {
+    .rice-noodle,
+    .juice-drink {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .vegetable-delights {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu h2::before {
+        width: 70px;
+    }
+
+    .menu img {
+        width: 100vw;
+        height: auto;
+     }
+
+     .menu-detail {
+        width: auto;
+        align-items: center;
+     }
+
+    .text h3 {
+        text-align: center;
+    }
+
+    .text p {
+        padding: 0px 10px;
+    }
+}
