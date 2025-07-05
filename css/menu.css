@@ -153,6 +153,7 @@ body {
 
      .menu-detail {
         width: auto;
+        height: auto;
         align-items: center;
      }
 
@@ -162,5 +163,9 @@ body {
 
     .text p {
         padding: 0px 10px;
+    }
+
+    .button {
+        margin-bottom: 2em;
     }
 }
