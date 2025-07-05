@@ -226,6 +226,8 @@ body {
     .wrapper img {
         width: 100vw;
         height: auto;
+        min-height: 18em;
+        object-fit: cover;
     }
 
     .wrapper-text {
