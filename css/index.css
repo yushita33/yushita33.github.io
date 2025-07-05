@@ -213,6 +213,10 @@ body {
      width: 40px;
 }
 
+.swiper-pagination-bullet-active {
+    background-color: #940000;
+}
+
 /* backtop */
 .back-to-top {
     position: sticky;
