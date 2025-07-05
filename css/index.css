@@ -278,6 +278,7 @@ body {
 
     .weekly-special img {
         width: 80%;
+        min-width: auto;
         height: auto;
         margin: 0 auto 30px auto;
     }
