@@ -234,7 +234,7 @@
     .weekly-special {
         flex-direction: column;
         background-attachment: scroll; 
-        padding: 20px 10px;
+        padding: 20px 0;
     }
 
     .weekly-special > div {
