@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-body {
-    background-color: #ffffff;
-    margin: 0;
-}
-
 .wrapper {
     display: flex;
     position: relative;
@@ -217,15 +212,6 @@ body {
     background-color: #940000;
 }
 
-/* backtop */
-.back-to-top {
-    position: sticky;
-    padding-right: 30px;
-    bottom: 0;
-    right: 0;
-    left: 100%;
-}
-
 @media screen and (max-width: 768px) {
     .wrapper img {
         width: 100vw;
@@ -310,29 +296,4 @@ body {
     .swiper-button-next {
         display: none;
     }
-
-    /* Menu Section */
-    .menu-section h2 {
-        font-size: 24px;
-    }
-
-    .menu-carousel-box {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    .menu-box {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    .back-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding-right: 0;
-    }
-
 }

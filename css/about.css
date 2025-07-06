@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-body {
-    background-color: #ffffff;
-    margin: 0;
-}
-
 .section-title {
     color: #6B3D36;
     font-family: Calibri;
@@ -137,14 +132,6 @@ body {
     font-weight: bold;
     padding: 5px 15px;
     box-shadow: 2px 2px 2px;
-}
-
-.back-to-top {
-    position: sticky;
-    padding-right: 30px;
-    bottom: 0;
-    right: 0;
-    left: 100%;
 }
 
 @media screen and (max-width: 1060px) {
