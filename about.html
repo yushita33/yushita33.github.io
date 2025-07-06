@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Learn the story behind Xiu Yuan Thai Food, a family-run restaurant in Taipei serving authentic Thai cuisine with warmth and tradition. Meet the founders and explore our values.">
+    <meta name="description" content="Learn the story behind Xiu Yuan Thai Food, a family-run restaurant in Taipei serving authentic Thai cuisine with warmth and tradition. Meet the founders and explore our values.">
     <title>XiuYuanThaiFood</title>
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footer.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <header class="navi">
@@ -19,6 +19,7 @@
                     alt="logo"
                     width="100"
                     height="100"
+                    fetchpriority=high
                 >
                 <h1>Xiu Yuan</h1>
             </a>
@@ -80,7 +81,13 @@
     <section id="contact" class="contact">
         <h2 class="section-title">Contact</h2>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14452.08594529618!2d121.52700459999997!3d25.101133999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ad27726f4da5%3A0x827e640e8038e3c1!2z56eA57iB6a6u5p6c5rGBIMKwIOazsOW8j-Wwj-WQgw!5e0!3m2!1sja!2sjp!4v1751266862823!5m2!1sen!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                title="Map showing the location of Xiu Yuan Thai Food"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14452.08594529618!2d121.52700459999997!3d25.101133999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ad27726f4da5%3A0x827e640e8038e3c1!2z56eA57iB6a6u5p6c5rGBIMKwIOazsOW8j-Wwj-WQgw!5e0!3m2!1sja!2sjp!4v1751266862823!5m2!1sen!2sjp"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
         <div class="contact-info">
             <div class="contact-info-icons">
