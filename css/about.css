@@ -50,6 +50,7 @@ body {
 
 .about-logo img {
     width: 320px;
+    height: auto;
 }
 
 .about-detail p {
