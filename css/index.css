@@ -28,7 +28,6 @@
 
 .weekly-special {
     display: flex;
-    /*gap: 40px;*/
     background-image: url(../image/waterpaper2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -261,8 +260,7 @@
     }
 
     .introduction {
-        width: 100%;
-        padding: 0 10px;
+        width: 90%;
         font-weight: normal;
         line-height: 1.4;
         margin-bottom: 20px;
